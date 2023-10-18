@@ -43,4 +43,5 @@ console.log(contador);
 
 const num1 = 10;
 const num2 = 'Paulo'; // Mas se tiver um número entre aspas o JS vai conseguir interpretar e fazer a conta
+// Para converter um número dentro de uma string pode ser usado o parseInt() para converter a string em número
 console.log(num1 * num2); // Resulta em NaN (Not a Number)
