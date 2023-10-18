@@ -10,5 +10,19 @@
 // => nome = 'Visoná' Vai dar erro
 // NÃO UTILIZE VAR, UTILIZE CONST
 
-const nome = 'Paulo';
-console.log(nome)
+// const nome = 'Paulo';
+// console.log(nome)
+
+const primeiroNumero = 5;
+const segundoNumero = 10;
+const resultado = primeiroNumero * segundoNumero;
+const resultadoDuplicado = resultado * 2;
+let resultadoTriplicado = resultado * 3;
+resultadoTriplicado = resultadoTriplicado + 5;
+console.log(resultadoTriplicado);
+
+console.log(typeof(primeiroNumero))
+console.log(typeof(resultado))
+console.log( typeof (primeiroNumero + segundoNumero))
+
+// Para saber o tipo do que for declarado usar o typeof()
