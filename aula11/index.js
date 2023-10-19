@@ -40,8 +40,15 @@ console.log(contador);
 // Atalho para não ter que ficar escrevendo esse monte de código para ficar somando
 
 // contador += passo;  contador = contador + passo
-
+/*
 const num1 = 10;
 const num2 = 'Paulo'; // Mas se tiver um número entre aspas o JS vai conseguir interpretar e fazer a conta
-// Para converter um número dentro de uma string pode ser usado o parseInt() para converter a string em número
 console.log(num1 * num2); // Resulta em NaN (Not a Number)
+*/
+
+// Para converter um número dentro de uma string pode ser usado o parseInt() para converter a string em número inteiro
+// Para converter um número dentro de uma string também pode ser usado o parseFloat() caso o número seja de ponto flutuante
+// Também pode ser usado o método de conversão Number() sem distinção de Int ou Float deixando o Js interpretar sozinho o tipo
+const num1 = 10;
+const num2 = Number('5');
+console.log(num1 + num2);
