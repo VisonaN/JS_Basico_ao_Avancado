@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Strings</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Digite seu nome completo:');
+        const letras = nome.length; // Ou ${nome.length} na string sem precisar criar const ou let como fiz primeiramente.
+        const letra2 = nome.charAt(1); // Ou ${nome[1]} na string sem precisar criar const ou let como fiz primeiramente.
+        const indiceA1 = nome.indexOf('a'); // Ou ${nome.indexOf('a')} na string sem precisar criar const ou let como fiz primeiramente.
+        const indiceA2 = nome.indexOf('á'); // Ou ${nome.lastIndexOf('a')} na string sem precisar criar const ou let como fiz primeiramente.
+        const ultLetras = nome.slice(-3); // Ou ${nome.slice(-3)} na string sem precisar criar const ou let como fiz primeiramente.
+        const palavras = nome.split(' - '); // OU ${nome.split(' ')} na string sem precisar criar const ou let como fiz primeiramente.
+        const maiúsculas = nome.toUpperCase(); // Ou ${nome.toUpperCase} nas string sem precisar criar const ou let como fiz primeiramente.
+        const minúsculas = nome.toLowerCase(); // Ou ${nome.toLowerCase} na string sem precisar criar const ou let como fiz primeiramente.
+        document.body.innerHTML += `O seu nome é: <b>${nome}<br/>`
+        document.body.innerHTML += `O seu nome tem <b>${letras} letras <br/>`
+        document.body.innerHTML += `A segunda letra do seu nome é: <b>${letra2} <br/>`
+        document.body.innerHTML += `Qual o primeiro índice de letra a no seu nome? <b>${indiceA1}<br/>`
+        document.body.innerHTML += `Qual o último índice da letra a no seu nome? <b>${indiceA2}<br/>`
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: <b>${ultLetras}<br/>`
+        document.body.innerHTML += `As palavras do seu nome são: <b>${palavras}<br/>`
+        document.body.innerHTML += `Seu nome com letras maiúsculas: <b>${maiúsculas} <br/>`
+        document.body.innerHTML += `Seu nome com letras minúsculas: <b>${minúsculas} <br/>`
+    </script>
+</body>
+</html>
