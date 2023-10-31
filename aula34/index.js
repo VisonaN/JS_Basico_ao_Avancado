@@ -47,3 +47,13 @@ console.log('---------------------');
 nomes.forEach(function(valor, indice, array) {
     console.log(valor, indice, array);
 });
+
+/* Se for usar ARRAY pode usar o FOR clássico / O FOR in - Retorna o índice - E precisa do array para pegar os valores: console.log(nomes[i]); / O FOR of - retorna o valor - console.log(valor); */
+
+/* Se for usar OBJETOS não conseguimos usar o FOR OF pois os objetos não são iteráveis / PODE usar o FOR IN pois pode pegar a chave do objeto for (let i in pessoa) { console.log( i, pessoa[i]) } */
+
+/* 
+FOR Clássico - Geralmente com iteráveis (array ou strings) 
+FOR in - Retorna o índice ou chave (string, array ou objetos)
+FOR of - Retorna o valor em si (iteráveis - array, string)
+*/
