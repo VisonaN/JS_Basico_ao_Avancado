@@ -53,13 +53,34 @@ try {
 } finally {
     console.log('FINALLY: Eu sempre sou executado.');
 }
-
+console.log('--------------------------------------------');
 // -----------------------------------------------------------------------------------------//
 
 //                                           EXEMPLO
 
 function retornaHora(data) {
-    if (!(data instanceof Date)) { // Verificando se data é uma instância da função construtora Date
-        throw new TypeError
+    if (data && !(data instanceof Date)) { // Verificando se data é uma instância da função construtora Date
+        throw new TypeError('Esperando instancia de Date.')
     }
+    if (!data) {
+        data = new Date();
+    }
+
+    return data.toLocaleTimeString('pt-br', {
+        hour: '2-digit', // Para colocar o zero a esquerda
+        minute: '2-digit', // Para colocar o zero a esquerda
+        second: '2-digit', // Para colocar o zero a esquerda
+        hour12: false // Para colocar no formato 24h
+    });
+}
+
+try {
+    const data = new Date('01-01-1970 12:58:12');
+    const hora = retornaHora();
+    console.log(hora);
+} catch (e) {
+    // Tratar erro
+    // console.log(e)
+} finally {
+    console.log('Tenha um bom dia!')
 }
