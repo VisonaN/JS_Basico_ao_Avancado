@@ -37,11 +37,29 @@
 // }
 
 try {
+    //console.log(a);
     console.log('Abri um arquivo');
     console.log('Manipulei um arquivo e deu erro');
     console.log('Fechei o arquivo');
+    try {
+        console.log(b);
+    } catch (e) {
+        console.log('Deu erro.');
+    } finally {
+        console.log('Também sou um finally');
+    }
 } catch (e) {
-
+    console.log('Tratando o erro');
 } finally {
+    console.log('FINALLY: Eu sempre sou executado.');
+}
 
+// -----------------------------------------------------------------------------------------//
+
+//                                           EXEMPLO
+
+function retornaHora(data) {
+    if (!(data instanceof Date)) { // Verificando se data é uma instância da função construtora Date
+        throw new TypeError
+    }
 }
