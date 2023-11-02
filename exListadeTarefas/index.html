@@ -4,33 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Lista de Tarefas</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <section class="container">
-        <h1>Lorem ipsum dolor sit amet</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis nesciunt a beatae ab? Ipsa facere
-            deserunt quidem sint voluptatibus voluptatum corporis labore, aspernatur, impedit repellendus a doloribus
-            quod. Necessitatibus, repudiandae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi debitis
-            deserunt recusandae nostrum mollitia quidem repellendus dolore hic qui? Facilis animi nemo sequi ad quidem
-            neque perferendis, quis dignissimos ullam?</p>
-        <form action="">
-            <label for="input-teste-1">Label teste #1</label>
-            <input type="text" name="input-teste-1" id="input-teste-1">
-
-            <label for="input-teste-2">Label teste #2</label>
-            <input type="password" name="input-teste-2" id="input-teste-2">
-
-            <label for="input-teste-3">Label teste #3</label>
-            <input type="email" name="input-teste-3" id="input-teste-3">
-
-            <label for="input-teste-4">Label teste #4</label>
-            <input type="number" name="input-teste-4" id="input-teste-4">
-
-            <button>Enviar</button>
-        </form>
+        <h1>Lista de Tarefas</h1>
+        <p>
+            <input type="text" class="input-nova-tarefa">
+            <button class="btn-add-tarefa">Adicionar nova tarefa</button>
+        </p>
+        <ul class="tarefas"></ul>
     </section>
     <script src="assets/js/main.js"></script>
 </body>
