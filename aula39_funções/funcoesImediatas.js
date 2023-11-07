@@ -1,0 +1,2 @@
+//                                       FUNÇÕES IMEDIATAS (IIFE)
+
