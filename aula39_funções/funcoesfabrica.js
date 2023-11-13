@@ -99,3 +99,4 @@ console.log(p1.nomeCompleto)
 console.log(p1.nome)
 console.log(p1.sobrenome)
 console.log(p1.fala()) // Exibindo o método que faz a pessoa falar
+console.log(p1.imc())
